@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { Menu, Phone, X, Waves } from 'lucide-react';
 import { LangSwitcher } from './lang-switcher';
 import { Button } from './button';
-import { cn, telLink, PHONE_EN, formatPhone } from '@/lib/cn';
+import { cn, telLink, PHONE_AI, formatPhone } from '@/lib/cn';
 
 type Props = {
   lang: 'en' | 'es';
@@ -54,9 +54,9 @@ export function Nav({ lang, labels }: Props) {
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-2">
-          <a href={telLink(PHONE_EN)} className={cn('inline-flex items-center gap-2 transition-colors', solid ? 'hover:text-pool-blue' : 'hover:text-white')}>
+          <a href={telLink(PHONE_AI)} className={cn('inline-flex items-center gap-2 transition-colors', solid ? 'hover:text-pool-blue' : 'hover:text-white')}>
             <Phone className="h-3 w-3" />
-            {formatPhone(PHONE_EN)} · English
+            {formatPhone(PHONE_AI)} · 24/7 AI Bilingual
           </a>
           <span>27 years · Licensed & Insured · Free Estimates</span>
           <span>Mon–Fri 8 AM – 5 PM</span>
@@ -141,9 +141,9 @@ export function Nav({ lang, labels }: Props) {
               </Button>
             </li>
             <li className="mt-3">
-              <a href={telLink(PHONE_EN)} className="inline-flex items-center gap-2 text-sm font-bold text-pool-ink">
+              <a href={telLink(PHONE_AI)} className="inline-flex items-center gap-2 text-sm font-bold text-pool-ink">
                 <Phone className="h-4 w-4 text-pool-blue" />
-                {formatPhone(PHONE_EN)}
+                {formatPhone(PHONE_AI)}
               </a>
             </li>
           </ul>

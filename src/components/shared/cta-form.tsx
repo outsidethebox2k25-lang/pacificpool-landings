@@ -70,15 +70,15 @@ export function CTAForm({ dict, city, citySlug, lang, webhookUrl, defaultZip }: 
       } else {
         setErr(
           lang === 'es'
-            ? 'No se pudo enviar. Llámanos al (702) 577-6839.'
-            : "Couldn't send. Call us at (725) 219-8411.",
+            ? 'No se pudo enviar. Llámanos al (702) 553-3314.'
+            : "Couldn't send. Call us at (702) 553-3314.",
         );
       }
     } catch {
       setErr(
         lang === 'es'
-          ? 'Algo salió mal. Llámanos al (702) 577-6839.'
-          : 'Something went wrong. Call us at (725) 219-8411.',
+          ? 'Algo salió mal. Llámanos al (702) 553-3314.'
+          : 'Something went wrong. Call us at (702) 553-3314.',
       );
     } finally {
       setSubmitting(false);

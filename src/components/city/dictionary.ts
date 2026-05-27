@@ -14,7 +14,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
     return {
       meta: {
         title: `Pool Plastering & Repair in ${C}, ${ST} · Free Quote · Pacific Pool`,
-        description: `Pool plaster, replaster, resurfacing & repair in ${C}. 27 years, licensed, bilingual, free estimates. Call (725) 219-8411.`,
+        description: `Pool plaster, replaster, resurfacing & repair in ${C}. 27 years, licensed, bilingual, free estimates. Call (702) 553-3314 · 24/7 AI.`,
       },
       nav: {
         services: 'Services',
@@ -28,7 +28,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
         title: `Your pool in ${C} is cracked, stained, or just tired. We fix that.`,
         subtitle: `27 years of pool plastering & repair. ${city.climateNote} Free estimate by phone or in person — no commitment, no BS.`,
         ctaPrimary: 'Get my free quote',
-        ctaSecondary: 'Call (725) 219-8411',
+        ctaSecondary: 'Call (702) 553-3314 · 24/7 AI',
         trust: {
           rating: '5.0 ★ Google',
           years: '27 years',
@@ -98,7 +98,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
         eyebrow: 'How it works',
         title: 'Four steps. Zero surprises.',
         steps: [
-          { title: '1. Call or fill the form', body: '(725) 219-8411 EN · (702) 577-6839 ES. Or fill the form below. Takes 60 seconds.' },
+          { title: '1. Call or fill the form', body: '(702) 553-3314 · 24/7 EN+ES AI. Or fill the form below. Takes 60 seconds.' },
           { title: '2. Free on-site estimate', body: 'We show up within 24-48h. Walk the pool, take measurements, hand you a written quote with photos.' },
           { title: '3. Schedule the work', body: 'You pick the start date. Most replasters are 4-6 days. Pool drained, plaster removed, new applied, refilled.' },
           { title: '4. Enjoy & warranty', body: '5-year workmanship warranty. Annual check-ups available. We stand behind our work.' },
@@ -121,7 +121,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
         title: 'Spring through October is our busiest stretch.',
         body: `Schedule your replaster NOW for a 2-3 week start. Call after May and you're looking at 6-8 weeks. Pool sitting empty in 110°F? Not great for the structure.`,
         ctaPrimary: 'Lock my spot',
-        ctaSecondary: 'Call (725) 219-8411',
+        ctaSecondary: 'Call (702) 553-3314 · 24/7 AI',
       },
       form: {
         title: `Free quote for your ${C} pool`,
@@ -148,7 +148,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
         submitting: 'Sending…',
         success: {
           title: "Got it. We'll be in touch fast.",
-          body: 'A real person will call/text you within the hour during business hours. Save our number: (725) 219-8411.',
+          body: 'A real person will call/text you within the hour during business hours. Save our AI line: (702) 553-3314.',
         },
         consent:
           'By submitting, you agree we may call/text you about your pool quote. Standard rates apply. We never sell your data.',
@@ -167,7 +167,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
   return {
     meta: {
       title: `Resanado y Reparación de Albercas en ${C}, ${ST} · Cotización Gratis · Pacific Pool`,
-      description: `Plaster, replaster, resurfacing y reparación de albercas en ${C}. 27 años, con licencia, bilingüe. Llama al (702) 577-6839.`,
+      description: `Plaster, replaster, resurfacing y reparación de albercas en ${C}. 27 años, con licencia, bilingüe. Llama al (702) 553-3314 · 24/7 IA.`,
     },
     nav: {
       services: 'Servicios',
@@ -181,7 +181,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
       title: `Tu alberca en ${C} está agrietada, manchada o ya cansada. La arreglamos.`,
       subtitle: `27 años de plastering y reparación de albercas. ${city.climateNote} Cotización gratis por teléfono o en persona — sin compromiso, sin rodeos.`,
       ctaPrimary: 'Quiero mi cotización',
-      ctaSecondary: 'Llama al (702) 577-6839',
+      ctaSecondary: 'Llama al (702) 553-3314 · 24/7 IA',
       trust: {
         rating: '5.0 ★ Google',
         years: '27 años',
@@ -251,7 +251,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
       eyebrow: 'Cómo funciona',
       title: 'Cuatro pasos. Cero sorpresas.',
       steps: [
-        { title: '1. Llama o llena el form', body: '(725) 219-8411 EN · (702) 577-6839 ES. O llena el form abajo. Toma 60 segundos.' },
+        { title: '1. Llama o llena el form', body: '(702) 553-3314 · 24/7 EN+ES AI. O llena el form abajo. Toma 60 segundos.' },
         { title: '2. Cotización gratis en persona', body: 'Llegamos en 24-48h. Caminamos la alberca, medimos, te damos cotización escrita con fotos.' },
         { title: '3. Agendamos el trabajo', body: 'Tú escoges la fecha de inicio. Replasters toman 4-6 días. Drenamos, removemos, aplicamos, llenamos.' },
         { title: '4. Disfruta + garantía', body: '5 años de garantía en mano de obra. Revisiones anuales disponibles. Respaldamos nuestro trabajo.' },
@@ -274,7 +274,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
       title: 'De primavera a octubre es nuestra época más cargada.',
       body: `Agenda tu replaster AHORA para empezar en 2-3 semanas. Si llamas después de mayo, son 6-8 semanas. ¿Alberca vacía en 110°F? No es bueno para la estructura.`,
       ctaPrimary: 'Asegurar mi lugar',
-      ctaSecondary: 'Llama al (702) 577-6839',
+      ctaSecondary: 'Llama al (702) 553-3314 · 24/7 IA',
     },
     form: {
       title: `Cotización gratis para tu alberca en ${C}`,
@@ -301,7 +301,7 @@ export function dictFor(city: CityConfig, lang: 'en' | 'es') {
       submitting: 'Enviando…',
       success: {
         title: 'Recibido. Te contactamos rápido.',
-        body: 'Una persona real te llama/textea en menos de una hora en horario. Guarda nuestro número: (702) 577-6839.',
+        body: 'Una persona real te llama/textea en menos de una hora en horario. Guarda nuestra línea IA: (702) 553-3314.',
       },
       consent:
         'Al enviar, aceptas que te llamemos/texteemos sobre tu cotización. Tarifas estándar. Nunca vendemos tus datos.',

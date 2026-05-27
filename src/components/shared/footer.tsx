@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { Clock, Mail, MapPin, Phone, Waves } from 'lucide-react';
-import { template, telLink, PHONE_EN, PHONE_ES, formatPhone } from '@/lib/cn';
+import { Clock, Mail, MapPin, Phone, Sparkles, Waves } from 'lucide-react';
+import { template, telLink, PHONE_AI, PHONE_EN, PHONE_ES, formatPhone } from '@/lib/cn';
 
 type Props = {
   lang: 'en' | 'es';
@@ -39,13 +39,24 @@ export function Footer({ lang, city }: Props) {
           </FooterCol>
 
           <FooterCol icon={<Phone className="h-3.5 w-3.5 text-pool-sun" />} label={t.phone}>
-            <a href={telLink(PHONE_EN)} className="block text-sm font-bold transition-colors hover:text-pool-cyan">
-              {formatPhone(PHONE_EN)} <span className="font-normal text-white/70">· EN</span>
+            <a
+              href={telLink(PHONE_AI)}
+              className="inline-flex items-center gap-2 rounded-full bg-pool-sun/15 px-3 py-1.5 text-sm font-bold transition-colors hover:bg-pool-sun/25"
+            >
+              <Sparkles className="h-3 w-3 text-pool-sun" />
+              {formatPhone(PHONE_AI)}
+              <span className="font-normal text-white/85">· 24/7 AI</span>
             </a>
-            <a href={telLink(PHONE_ES)} className="mt-1 block text-sm font-bold transition-colors hover:text-pool-cyan">
-              {formatPhone(PHONE_ES)} <span className="font-normal text-white/70">· ES</span>
+            <p className="mt-3 text-[10px] uppercase tracking-editorial text-white/55">
+              {t.officeLines}
+            </p>
+            <a href={telLink(PHONE_EN)} className="mt-1 block text-xs font-bold transition-colors hover:text-pool-cyan">
+              {formatPhone(PHONE_EN)} <span className="font-normal text-white/60">· EN</span>
             </a>
-            <p className="mt-3 text-[10px] uppercase tracking-editorial text-white/60">{t.email}</p>
+            <a href={telLink(PHONE_ES)} className="mt-0.5 block text-xs font-bold transition-colors hover:text-pool-cyan">
+              {formatPhone(PHONE_ES)} <span className="font-normal text-white/60">· ES</span>
+            </a>
+            <p className="mt-3 text-[10px] uppercase tracking-editorial text-white/55">{t.email}</p>
             <a
               href="mailto:pacificpoolplasteringandrepair@gmail.com"
               className="mt-1 block text-xs text-white/90 transition-colors hover:text-pool-cyan"
@@ -91,8 +102,9 @@ const enCopy = {
   area: 'Service Area',
   areaList: (city: string) => `Currently in: ${city}\nAlso serving Bullhead City, Kingman, Lake Havasu City.`,
   hours: 'Hours',
-  hoursValue: 'Mon–Fri 8 AM – 5 PM · Sat–Sun by appointment',
-  phone: 'Phone',
+  hoursValue: 'Mon–Fri 8 AM – 5 PM · AI agent answers 24/7',
+  phone: 'Call us',
+  officeLines: 'Office Lines',
   email: 'Email',
   rights: '© {year} Pacific Pool Plastering & Repair LLC.',
   licensed: 'Licensed · Insured · Free Estimates',
@@ -104,8 +116,9 @@ const esCopy = {
   area: 'Zona de Servicio',
   areaList: (city: string) => `Actualmente en: ${city}\nTambién Bullhead City, Kingman, Lake Havasu City.`,
   hours: 'Horario',
-  hoursValue: 'Lun–Vie 8 AM – 5 PM · Sáb–Dom con cita',
-  phone: 'Teléfono',
+  hoursValue: 'Lun–Vie 8 AM – 5 PM · Agente IA contesta 24/7',
+  phone: 'Llámanos',
+  officeLines: 'Líneas de Oficina',
   email: 'Correo',
   rights: '© {year} Pacific Pool Plastering & Repair LLC.',
   licensed: 'Licencia · Asegurados · Cotización Gratis',

@@ -8,8 +8,9 @@ export function template(str: string, vars: Record<string, string | number>) {
   return str.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ''));
 }
 
-export const PHONE_EN = '+17252198411';
-export const PHONE_ES = '+17025776839';
+export const PHONE_AI = '+17025533314';      // 24/7 bilingual AI agent (primary CTA)
+export const PHONE_EN = '+17252198411';       // English office line
+export const PHONE_ES = '+17025776839';       // Spanish office line
 export const WHATSAPP_NUMBER = '17025776839';
 
 export const telLink = (phone: string) => `tel:${phone.replace(/[^0-9+]/g, '')}`;

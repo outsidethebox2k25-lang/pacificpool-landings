@@ -23,6 +23,7 @@ import { useState } from 'react';
 import { Button } from '@/components/shared/button';
 import { Reveal, Stagger, StaggerItem, fadeUp } from '@/components/shared/reveal';
 import {
+  PHONE_AI,
   PHONE_EN,
   PHONE_ES,
   formatPhone,
@@ -43,7 +44,7 @@ export function Hero({
   city: CityConfig;
   lang: 'en' | 'es';
 }) {
-  const phone = lang === 'es' ? PHONE_ES : PHONE_EN;
+  const phone = PHONE_AI;
   return (
     <section className="relative isolate min-h-[88svh] overflow-hidden bg-pool-ink text-white lg:min-h-[92svh]">
       <div className="absolute inset-0 -z-10">
@@ -368,7 +369,7 @@ export function FAQs({ dict }: { dict: CityDict }) {
 
 // ───────────────────────────────────────────────── URGENCY
 export function Urgency({ dict, lang }: { dict: CityDict; lang: 'en' | 'es' }) {
-  const phone = lang === 'es' ? PHONE_ES : PHONE_EN;
+  const phone = PHONE_AI;
   return (
     <section className="relative overflow-hidden bg-gradient-sun px-5 py-16 text-pool-ink sm:py-20 lg:px-8 lg:py-28">
       <div className="relative mx-auto max-w-4xl text-center">
@@ -443,19 +444,33 @@ export function FinalCta({
   );
 }
 
-// ───────────────────────────────────────────────── PHONE STRIP (AI agent CTA placeholder)
+// ───────────────────────────────────────────────── PHONE STRIP (AI agent 24/7)
 export function PhoneStrip({ lang }: { lang: 'en' | 'es' }) {
-  const phone = lang === 'es' ? PHONE_ES : PHONE_EN;
+  const phone = PHONE_AI;
   const copy =
     lang === 'es'
-      ? { eyebrow: 'Llama 24/7', headline: 'Una llamada arregla tu alberca.', cta: 'Llamar ahora' }
-      : { eyebrow: 'Call us 24/7', headline: 'One call fixes your pool.', cta: 'Call now' };
+      ? {
+          badge: 'Agente IA · 24/7 · Bilingüe',
+          headline: 'Llama y habla con nuestro agente IA. Bilingüe. Nunca duerme.',
+          sub: 'Resuelve dudas, agenda tu cotización, te conecta con humano si lo necesitas. Nunca perdemos una llamada.',
+          cta: 'Llama ahora',
+        }
+      : {
+          badge: 'AI Agent · 24/7 · Bilingual',
+          headline: 'Call our AI agent. Bilingual. Never sleeps.',
+          sub: 'Answers questions, books your free estimate, hands off to a human if needed. We never miss a lead.',
+          cta: 'Call now',
+        };
   return (
-    <section className="bg-gradient-pool px-5 py-10 text-white lg:px-8">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
-        <div>
-          <p className="text-[10px] font-bold uppercase tracking-editorial text-white/85">{copy.eyebrow}</p>
-          <p className="font-display mt-1 text-2xl font-bold sm:text-3xl">{copy.headline}</p>
+    <section className="relative overflow-hidden bg-gradient-pool px-5 py-12 text-white sm:py-14 lg:px-8">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
+        <div className="max-w-xl">
+          <p className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-editorial text-white backdrop-blur sm:text-[11px]">
+            <Sparkles className="h-3 w-3" />
+            {copy.badge}
+          </p>
+          <p className="font-display mt-3 text-2xl font-bold leading-tight sm:text-3xl">{copy.headline}</p>
+          <p className="mt-2 text-sm text-white/85 sm:text-base">{copy.sub}</p>
         </div>
         <a
           href={telLink(phone)}
